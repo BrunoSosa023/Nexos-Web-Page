@@ -1,0 +1,695 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family:'DM Sans', sans-serif;
+}
+
+/*NAV*/
+
+header {
+    background-color: whitesmoke;
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.menu {
+    width: 900px;
+    margin: auto;
+}
+
+#foto-menu {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+img {
+    width: 120px;
+    height: 75px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 25px;
+    padding: 25px 0;
+    float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+nav button {
+    padding: 5px 15px;
+    background-color: #5227CC;
+    color: white;
+    border-radius: 15px;
+    border: none;
+}
+
+/*PORTADA*/
+
+.portada {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portada img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.portada h1 {
+    font-size: 3rem;
+    color: white;
+    z-index: 1;
+}
+.portada p {
+    width: 900px;
+    font-size: 2rem;
+    color: white;
+    z-index: 1;
+}
+
+.nosotros {
+    background-color: #5298FF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "uno dos"
+    "tres cuatro";
+    padding: 6%;
+    gap: 20px;
+}
+
+.imagen_oficina {
+    grid-area: uno;
+    width: 100%;
+    height: 100%;
+    min-width: 630px;
+    max-height: 450px;
+    max-width: 1250px;
+    
+}
+
+.imagen_oficina img {
+    width: 100%;
+    height: 100%;
+    min-width: 630px;
+    object-fit: cover;
+}
+
+.imagen_voluntariado {
+    grid-area: cuatro;
+    width: 100%;
+    height: 100%;
+    min-width: 630px;
+    max-height: 450px;
+    max-width: 1250px;
+    
+}
+
+.imagen_voluntariado img {
+    width: 100%;
+    height: 100%;
+    min-width: 630px;
+    object-fit: cover;
+}
+
+.texto_nosotros_uno h2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    color: white;
+    padding-top: 100px;
+}
+
+.texto_nosotros_uno p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: white;
+    padding-top: 35px;
+}
+
+.texto_nosotros_dos h2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    color: white;
+    padding-top: 100px;
+}
+
+.texto_nosotros_dos p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: white;
+    padding-top: 35px;
+}
+
+/*OPORTUNIDADES*/
+
+
+.oportunidades {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.oportunidades h3 {
+    font-size: 2.5rem;
+    padding-top: 50px;
+    text-align: center;
+    color: rgb(26, 4, 85);
+    font-weight: lighter;
+}
+
+.oportunidades .cajas {
+   padding-top: 15px;
+   display: flex;
+   color: white;
+}
+.oportunidades p {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    padding-right: 21%;
+    padding-left: 21%;
+    color: rgb(26, 4, 85)
+}
+
+.oportunidades .imagenMas {
+    height: 20px;
+    width: 20px;
+}
+
+.oportunidades .cajas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 75px;
+}
+
+.oportunidades .cajas p {
+    color: white;
+    font-size: 1.75rem;
+    text-align: left;
+}
+
+.caja-box-red {
+    background-color: #DC3545;
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    min-width: 250px;
+}
+.caja-box-yellow {
+    background-color: #FF9C07;
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    min-width: 250px;
+}
+.caja-box-green {
+    background-color: #28A745;
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    min-width: 250px;
+}
+.caja-box-blue {
+    background-color: #17A2B8;
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    min-width: 250px;
+}
+
+.cajas .contenido_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "primera_imagen segunda_imagen";
+}
+
+.oportunidades .imagen_generica {
+    grid-template-areas: primera_imagen;
+    padding-top: 40px;
+    padding-left: 25px;
+}
+
+.oportunidades .imagenMas {
+    grid-template-areas: segunda_imagen;
+    padding-left: 75%;
+    padding-top: 15%;
+}
+.oportunidades img {
+    padding-left: 5%;
+    padding-top: 5%;
+    height: 75px;
+    width: 75px;
+}
+
+.oportunidades .imagenMas img { 
+    height: 25px;
+    width: 25px;
+}
+
+/*NOTICIAS*/
+
+.noticias {
+    background-color: #5298FF;
+}
+
+.noticias .cartas {
+    padding: 75px;
+    display: flex;
+justify-content: center;
+    gap: 15px;
+   /* padding-left: 500px;
+    padding-right: 500px; */
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 375px;
+    height: 500px;
+    background-color: white;
+    min-width: 270px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  }
+  
+  .container {
+    padding: 2px 16px;
+    word-wrap: break-word;
+  }
+
+  .card img {
+    width: 10px;
+    height: 200px;
+  }
+
+  .noticias h4 {
+    padding-top: 100px;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+  }
+
+  .card .container img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .noticias button {
+    display: flex;
+    padding: 5px 15px;
+    background-color: #5227CC;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    position: relative;
+    left: 20px;
+    bottom: 40px;
+
+ }
+
+  .noticias p {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .noticias p  a{
+    text-align: center;
+    color: white;
+  }
+
+  .noticias h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+/*CONTACTO*/
+
+.contacto_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto {
+    background-color: white;
+    width: 1000px;
+    height: 500px;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 3fr;
+    grid-template-areas: 
+    "img contacto contacto"
+    "img mail mensaje"
+    "img password mensaje"
+    "img enviar enviar"
+    "img enviar enviar";
+    grid-gap: 10px 10px;
+}
+.la_imagen {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+}
+.el_contacto {
+    grid-area: contacto;
+}
+.el_mail {
+    grid-area: mail;
+}
+.el_password {
+    grid-area: password;
+}
+.el_mensaje {
+    grid-area: mensaje;
+}
+.el_enviar {
+    grid-area: enviar;
+text-align: center;
+padding-top: 30px;
+}
+
+.contacto button {
+    padding: 5px 15px;
+    background-color: #5227CC;
+    color: white;
+    border-radius: 15px;
+    border: none;
+}
+
+.contacto img {
+    height: 300px;
+    width: 600px;
+}
+
+.el_contacto {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #5227CC;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+footer ul {
+    padding-left: 350px;
+    color: #5227CC;
+    text-decoration: none;
+}
+footer a {
+color: white;
+text-decoration: none;
+}
+
+footer img {
+    height: 40px;
+    width: 120px;
+    margin-left: 125px;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    border-radius: 20px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.modal--show {
+opacity: 1;
+pointer-events: unset;
+opacity: .6s;
+}
+
+.modal_container {
+text-align: center;
+border-radius: 15px;
+margin:auto;
+width: 1000px;
+height: 600px;
+max-width: 1000px;
+max-height: 90%;
+background-color: rgb(230, 228, 228);
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 0.5fr 2fr 2fr;
+grid-template-areas: 
+"img contacto"
+"img empresa"
+"img organizacion";
+}
+
+.imagen_del_modal {
+    grid-area: img;
+}
+
+.imagen_del_modal img {
+    width: 100%;
+    height: 100%;
+}
+
+.texto_modal {
+    grid-area: contacto;
+    padding-top: 20px;
+}
+
+.mi_Empresa {
+    grid-area: empresa;
+    margin: 50px;
+}
+
+.mi_Organización {
+    grid-area: organizacion;
+    margin: 50px;
+}
+
+.modal a {
+    text-decoration: none;
+}
+
+
+.modal .mi_Empresa {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.modal .mi_Organización {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.modal_titulo {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.modal1_titulo {
+    font-size: 1.5rem;
+    color: #5298FF;
+    font-weight: bold;
+}
+
+.modal2_titulo2 {
+    font-size: 1.5rem;
+    color: #5227CC;
+    font-weight: bold;
+}
+
+.los_cierres {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.modal_close {
+padding-left: 5%;
+}
+
+.modal_close1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mi_Empresa {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "img mi_empresa cierre"
+    "img parrafo cierre";
+}
+
+.iconoPersona {
+    grid-area: img;
+    background: #5298FF;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconoPersona img {
+    width: 50px;
+    height: 50px;
+}
+.modal1_titulo {
+    grid-area: mi_empresa;
+    padding-top: 20px;
+}
+.modal1_parrafo {
+    grid-area: parrafo;
+}
+.flecha_cierre {
+    grid-area: cierre;
+}
+
+.mi_Organización {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img mi_organizacion cierre"
+    "img parrafo cierre";
+}
+
+.iconoMaleta {
+    grid-area: img;
+    background: #5227CC;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconoMaleta img {
+    height: 50px;
+    width: 50px;
+}
+.modal2_titulo {
+    grid-area: mi_organizacion;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.modal2_parrafo {
+    grid-area: parrafo;
+}
+.flecha_cierre {
+    grid-area: cierre;
+    padding-top: 99%;
+}
+
+.flecha_cierre img {
+    width: 1rem;
+    height: 1rem;
+}
+
+@media (max-width:390px) {
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "uno"
+        "dos"
+        "cuatro"
+        "tres";
+        padding: 6%;
+        gap: 20px;
+    }
+.oportunidades h2 {
+    padding-top: 0;
+}
+    .oportunidades p {
+        display: none;
+        text-align: center;
+    }
+
+    .oportunidades .cajas {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        margin: 5%;
+
+    }
+}
